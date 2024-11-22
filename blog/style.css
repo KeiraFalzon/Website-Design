@@ -29,8 +29,13 @@ body{
     position: relative;
 }
 
+.intro-story{
+    z-index: 900;
+    height: 75vh;
+}
+
 .intro-container{
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(2, 2, 2, 0.5);
     color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /*properties: X, Y, size, colour*/
     width: 25%;

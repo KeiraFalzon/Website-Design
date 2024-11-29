@@ -12,6 +12,15 @@ body{
     line-height: 1.6;
     min-height: 200vh;
 }
+
+hr{
+    border: none;
+    /*values: width/size style colour*/
+    border-bottom: 1px solid #ccc;
+
+    margin-top: 50px !important;
+    margin-bottom: 50px !important; /*!important will not get replaced*/
+}
 /************************************************************** INTRO *****************************************************************************/
 .intro{
     background-image: url(images/leaves.jpg);
@@ -96,6 +105,11 @@ body{
     margin: auto; /*pushes all content to the middle*/ 
 }
 
+.content-narrow{
+    max-width: 640px;
+    margin: auto;
+}
+
 /*************************************************************** GRID *****************************************************************************/
 
 .row{
@@ -112,6 +126,10 @@ body{
 
 .three-columns .card{
     width: calc((100% - 100px) / 3);
+}
+
+.one-column .card{
+    width: calc(100%);
 }
 
 /*********************************************************** MAIN CONTENT *************************************************************************/
@@ -216,4 +234,34 @@ body{
     font-weight: bold;
 
     align-content: center;
+}
+
+/************************************************************* STORY *****************************************************************************/
+
+.story-header h1{
+    font-size: 2em; /*twice the current font size*/
+    margin-bottom: 25px;
+}
+
+.story-header p{
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: Cardo, Georgia, 'Times New Roman', Times, serif;
+
+    line-height: 1.2;
+}
+
+.story-header .byline{
+    margin-top: 10px;
+}
+
+/*targets everything inside the class="byline"*/
+.story-header .byline *{
+    display: inline;
+    font-style: normal;
+}
+
+/*a comma can be used to add CSS to multiple elements*/
+.story-content p, .story-content .row{
+    margin-bottom: 50px;
 }

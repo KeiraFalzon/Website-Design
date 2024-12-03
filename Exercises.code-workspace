@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "web-banner"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "web-banner"
+	}
+}

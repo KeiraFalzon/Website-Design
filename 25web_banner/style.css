@@ -1,0 +1,87 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Banner Container */
+  .banner {
+    width: 728px;
+    height: 200px;
+    background: linear-gradient(90deg, #82c91e, #b2df41);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Content */
+  .content {
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .headline {
+    font-size: 1.5rem;
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  
+  .cta-button {
+    background-color: #ffffff;
+    color: #82c91e;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    animation: pulse 5s infinite;
+    transition: transform 0.3s;
+  }
+  
+  .cta-button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
